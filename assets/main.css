@@ -1,10 +1,10 @@
 /**
  * CyberChef - The Cyber Swiss Army Knife
  *
- * @copyright Crown Copyright 2016
+ * @copyright Crown Copyright 2016-2024
  * @license Apache-2.0
  *
- *   Copyright 2016 Crown Copyright
+ *   Copyright 2016-2024 Crown Copyright
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,7 +18,69 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}.hljs{background:#fff;color:#000}.hljs-comment,.hljs-quote,.hljs-variable{color:green}.hljs-built_in,.hljs-keyword,.hljs-name,.hljs-selector-tag,.hljs-tag{color:#00f}.hljs-addition,.hljs-attribute,.hljs-literal,.hljs-section,.hljs-string,.hljs-template-tag,.hljs-template-variable,.hljs-title,.hljs-type{color:#a31515}.hljs-deletion,.hljs-meta,.hljs-selector-attr,.hljs-selector-pseudo{color:#2b91af}.hljs-doctag{color:grey}.hljs-attr{color:red}.hljs-bullet,.hljs-link,.hljs-symbol{color:#00b0e8}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em
+}
+code.hljs {
+  padding: 3px 5px
+}
+/*
+
+Visual Studio-like style based on original C# coloring by Jason Diamond <jason@diamond.name>
+
+*/
+.hljs {
+  background: white;
+  color: black
+}
+.hljs-comment,
+.hljs-quote,
+.hljs-variable {
+  color: #008000
+}
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-built_in,
+.hljs-name,
+.hljs-tag {
+  color: #00f
+}
+.hljs-string,
+.hljs-title,
+.hljs-section,
+.hljs-attribute,
+.hljs-literal,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-type,
+.hljs-addition {
+  color: #a31515
+}
+.hljs-deletion,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-meta {
+  color: #2b91af
+}
+.hljs-doctag {
+  color: #808080
+}
+.hljs-attr {
+  color: #f00
+}
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link {
+  color: #00b0e8
+}
+.hljs-emphasis {
+  font-style: italic
+}
+.hljs-strong {
+  font-weight: bold
+}
 .card {
   font-size: .875rem;
   font-weight: normal; }
@@ -13936,6 +13998,438 @@ h6 {
     --input-border-colour: #424242;
 }
 
+/**
+ * GeoCities theme definitions
+ *
+ * @author n1474335 [n1474335@gmail.com]
+ * @copyright Crown Copyright 2017
+ * @license Apache-2.0
+ */
+
+:root.geocities {
+    --primary-font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
+    --primary-font-colour: black;
+    --primary-font-size: 14px;
+    --primary-line-height: 20px;
+
+    --fixed-width-font-family: "Courier New", Courier, monospace;
+    --fixed-width-font-colour: yellow;
+    --fixed-width-font-size: inherit;
+
+    --subtext-font-colour: darkgrey;
+    --subtext-font-size: 13px;
+
+    --primary-background-colour: #00f;
+    --secondary-background-colour: #f00;
+
+    --primary-border-colour: pink;
+    --secondary-border-colour: springgreen;
+
+    --title-colour: red;
+    --title-weight: bold;
+    --title-background-colour: yellow;
+
+    --banner-font-colour: white;
+    --banner-bg-colour: maroon;
+    --banner-url-colour: yellow;
+
+    --category-list-font-colour: yellow;
+
+    --loader-background-colour: #00f;
+    --loader-outer-colour: #0f0;
+    --loader-middle-colour: red;
+    --loader-inner-colour: yellow;
+
+
+    /* Operation colours */
+    --op-list-operation-font-colour: blue;
+    --op-list-operation-bg-colour: yellow;
+    --op-list-operation-border-colour: green;
+
+    --rec-list-operation-font-colour: white;
+    --rec-list-operation-bg-colour: purple;
+    --rec-list-operation-border-colour: green;
+
+    --selected-operation-font-color: white;
+    --selected-operation-bg-colour: pink;
+    --selected-operation-border-colour: blue;
+
+    --breakpoint-font-colour: white;
+    --breakpoint-bg-colour: red;
+    --breakpoint-border-colour: blue;
+
+    --disabled-font-colour: grey;
+    --disabled-bg-colour: black;
+    --disabled-border-colour: grey;
+
+    --fc-operation-font-colour: sienna;
+    --fc-operation-bg-colour: pink;
+    --fc-operation-border-colour: yellow;
+
+    --fc-breakpoint-operation-font-colour: darkgrey;
+    --fc-breakpoint-operation-bg-colour: deeppink;
+    --fc-breakpoint-operation-border-colour: yellowgreen;
+
+
+    /* Operation arguments */
+    --op-title-font-weight: bold;
+    --arg-font-colour: white;
+    --arg-background: black;
+    --arg-border-colour: lime;
+    --arg-disabled-background: grey;
+    --arg-label-colour: red;
+
+
+    /* Operation buttons */
+    --disable-icon-colour: #0f0;
+    --disable-icon-selected-colour: yellow;
+    --breakpoint-icon-colour: #0f0;
+    --breakpoint-icon-selected-colour: yellow;
+
+
+    /* Buttons */
+    --btn-default-font-colour: black;
+    --btn-default-bg-colour: white;
+    --btn-default-border-colour: grey;
+
+    --btn-default-hover-font-colour: black;
+    --btn-default-hover-bg-colour: white;
+    --btn-default-hover-border-colour: grey;
+
+    --btn-success-font-colour: white;
+    --btn-success-bg-colour: lawngreen;
+    --btn-success-border-colour: grey;
+
+    --btn-success-hover-font-colour: white;
+    --btn-success-hover-bg-colour: lime;
+    --btn-success-hover-border-colour: grey;
+
+
+    /* Highlighter colours */
+    --hl1: #fff000;
+    --hl2: #95dfff;
+    --hl3: #ffb6b6;
+    --hl4: #fcf8e3;
+    --hl5: #8de768;
+
+
+    /* Scrollbar */
+    --scrollbar-track: lightsteelblue;
+    --scrollbar-thumb: lightslategrey;
+    --scrollbar-hover: grey;
+
+
+    /* Misc. */
+    --drop-file-border-colour: purple;
+    --table-border-colour: var(--hl3);
+    --popover-background: turquoise;
+    --popover-border-colour: violet;
+    --code-background: black;
+    --code-font-colour: limegreen;
+    --input-highlight-colour: limegreen;
+    --input-border-colour: limegreen;
+}
+
+/**
+ * Solarized dark theme definitions
+ *
+ * @author j433866 [j433866@gmail.com]
+ * @copyright Crown Copyright 2019
+ * @license Apache-2.0
+ */
+
+:root.solarizedDark {
+    --base03: #002b36;
+    --base02: #073642;
+    --base01: #586e75;
+    --base00: #657b83;
+    --base0: #839496;
+    --base1: #93a1a1;
+    --base2: #eee8d5;
+    --base3: #fdf6e3;
+    --sol-yellow: #b58900;
+    --sol-orange: #cb4b16;
+    --sol-red: #dc322f;
+    --sol-magenta: #d33682;
+    --sol-violet: #6c71c4;
+    --sol-blue: #268bd2;
+    --sol-cyan: #2aa198;
+    --sol-green: #859900;
+
+    --primary-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, "Helvetica Neue", Arial, sans-serif;
+    --primary-font-colour: var(--base0);
+    --primary-font-size: 14px;
+    --primary-line-height: 20px;
+
+    --fixed-width-font-family: SFMono-Regular, Menlo, Monaco, Consolas,
+        "Liberation Mono", "Courier New", monospace;
+    --fixed-width-font-colour: inherit;
+    --fixed-width-font-size: inherit;
+
+    --subtext-font-colour: var(--base01);
+    --subtext-font-size: 13px;
+
+    --primary-background-colour: var(--base03);
+    --secondary-background-colour: var(--base02);
+
+    --primary-border-colour: var(--base00);
+    --secondary-border-colour: var(--base01);
+
+    --title-colour: var(--base1);
+    --title-weight: bold;
+    --title-background-colour: var(--base02);
+
+    --banner-font-colour: var(--base0);
+    --banner-bg-colour: var(--base03);
+    --banner-url-colour: var(--base1);
+
+    --category-list-font-colour: var(--base1);
+
+    --loader-background-colour: var(--base03);
+    --loader-outer-colour: var(--base1);
+    --loader-middle-colour: var(--base0);
+    --loader-inner-colour: var(--base00);
+
+
+    /* Operation colours */
+    --op-list-operation-font-colour: var(--base0);
+    --op-list-operation-bg-colour: var(--base03);
+    --op-list-operation-border-colour: var(--base02);
+
+    --rec-list-operation-font-colour: var(--base0);
+    --rec-list-operation-bg-colour: var(--base02);
+    --rec-list-operation-border-colour: var(--base01);
+
+    --selected-operation-font-color: var(--base1);
+    --selected-operation-bg-colour: var(--base02);
+    --selected-operation-border-colour: var(--base01);
+
+    --breakpoint-font-colour: var(--sol-red);
+    --breakpoint-bg-colour: var(--base02);
+    --breakpoint-border-colour: var(--base00);
+
+    --disabled-font-colour: var(--base01);
+    --disabled-bg-colour: var(--base03);
+    --disabled-border-colour: var(--base02);
+
+    --fc-operation-font-colour: var(--base1);
+    --fc-operation-bg-colour: var(--base02);
+    --fc-operation-border-colour: var(--base01);
+
+    --fc-breakpoint-operation-font-colour: var(--sol-orange);
+    --fc-breakpoint-operation-bg-colour: var(--base02);
+    --fc-breakpoint-operation-border-colour: var(--base00);
+
+
+    /* Operation arguments */
+    --op-title-font-weight: bold;
+    --arg-font-colour: var(--base0);
+    --arg-background: var(--base03);
+    --arg-border-colour: var(--base00);
+    --arg-disabled-background: var(--base03);
+    --arg-label-colour: var(--base1);
+
+
+    /* Operation buttons */
+    --disable-icon-colour: var(--base00);
+    --disable-icon-selected-colour: var(--sol-red);
+    --breakpoint-icon-colour: var(--base00);
+    --breakpoint-icon-selected-colour: var(--sol-red);
+
+    /* Buttons */
+    --btn-default-font-colour: var(--base0);
+    --btn-default-bg-colour: var(--base02);
+    --btn-default-border-colour: var(--base01);
+
+    --btn-default-hover-font-colour: var(--base1);
+    --btn-default-hover-bg-colour: var(--base01);
+    --btn-default-hover-border-colour: var(--base00);
+
+    --btn-success-font-colour: var(--base0);
+    --btn-success-bg-colour: var(--base03);
+    --btn-success-border-colour: var(--base00);
+
+    --btn-success-hover-font-colour: var(--base1);
+    --btn-success-hover-bg-colour: var(--base01);
+    --btn-success-hover-border-colour: var(--base00);
+
+    /* Highlighter colours */
+    --hl1: var(--base01);
+    --hl2: var(--sol-blue);
+    --hl3: var(--sol-green);
+    --hl4: var(--sol-yellow);
+    --hl5: var(--sol-magenta);
+
+
+    /* Scrollbar */
+    --scrollbar-track: var(--base03);
+    --scrollbar-thumb: var(--base00);
+    --scrollbar-hover: var(--base01);
+
+
+    /* Misc. */
+    --drop-file-border-colour: var(--base01);
+    --table-border-colour: var(--base01);
+    --popover-background: var(--base02);
+    --popover-border-colour: var(--base01);
+    --code-background: var(--base03);
+    --code-font-colour: var(--base1);
+    --input-highlight-colour: var(--base1);
+    --input-border-colour: var(--base0);
+}
+
+/**
+ * Solarized light theme definitions
+ *
+ * @author j433866 [j433866@gmail.com]
+ * @copyright Crown Copyright 2019
+ * @license Apache-2.0
+ */
+
+:root.solarizedLight {
+    --base03: #002b36;
+    --base02: #073642;
+    --base01: #586e75;
+    --base00: #657b83;
+    --base0: #839496;
+    --base1: #93a1a1;
+    --base2: #eee8d5;
+    --base3: #fdf6e3;
+    --sol-yellow: #b58900;
+    --sol-orange: #cb4b16;
+    --sol-red: #dc322f;
+    --sol-magenta: #d33682;
+    --sol-violet: #6c71c4;
+    --sol-blue: #268bd2;
+    --sol-cyan: #2aa198;
+    --sol-green: #859900;
+
+    --primary-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, "Helvetica Neue", Arial, sans-serif;
+    --primary-font-colour: var(--base00);
+    --primary-font-size: 14px;
+    --primary-line-height: 20px;
+
+    --fixed-width-font-family: SFMono-Regular, Menlo, Monaco, Consolas,
+        "Liberation Mono", "Courier New", monospace;
+    --fixed-width-font-colour: inherit;
+    --fixed-width-font-size: inherit;
+
+    --subtext-font-colour: var(--base1);
+    --subtext-font-size: 13px;
+
+    --primary-background-colour: var(--base3);
+    --secondary-background-colour: var(--base2);
+
+    --primary-border-colour: var(--base0);
+    --secondary-border-colour: var(--base1);
+
+    --title-colour: var(--base01);
+    --title-weight: bold;
+    --title-background-colour: var(--base2);
+
+    --banner-font-colour: var(--base00);
+    --banner-bg-colour: var(--base3);
+    --banner-url-colour: var(--base01);
+
+    --category-list-font-colour: var(--base01);
+
+    --loader-background-colour: var(--base3);
+    --loader-outer-colour: var(--base01);
+    --loader-middle-colour: var(--base00);
+    --loader-inner-colour: var(--base0);
+
+
+    /* Operation colours */
+    --op-list-operation-font-colour: var(--base00);
+    --op-list-operation-bg-colour: var(--base3);
+    --op-list-operation-border-colour: var(--base2);
+
+    --rec-list-operation-font-colour: var(--base00);
+    --rec-list-operation-bg-colour: var(--base2);
+    --rec-list-operation-border-colour: var(--base1);
+
+    --selected-operation-font-color: var(--base01);
+    --selected-operation-bg-colour: var(--base2);
+    --selected-operation-border-colour: var(--base1);
+
+    --breakpoint-font-colour: var(--sol-red);
+    --breakpoint-bg-colour: var(--base2);
+    --breakpoint-border-colour: var(--base0);
+
+    --disabled-font-colour: var(--base1);
+    --disabled-bg-colour: var(--base3);
+    --disabled-border-colour: var(--base2);
+
+    --fc-operation-font-colour: var(--base01);
+    --fc-operation-bg-colour: var(--base2);
+    --fc-operation-border-colour: var(--base1);
+
+    --fc-breakpoint-operation-font-colour: var(--base02);
+    --fc-breakpoint-operation-bg-colour: var(--base1);
+    --fc-breakpoint-operation-border-colour: var(--base0);
+
+
+    /* Operation arguments */
+    --op-title-font-weight: bold;
+    --arg-font-colour: var(--base00);
+    --arg-background: var(--base3);
+    --arg-border-colour: var(--base0);
+    --arg-disabled-background: var(--base3);
+    --arg-label-colour: var(--base01);
+
+
+    /* Operation buttons */
+    --disable-icon-colour: #9e9e9e;
+    --disable-icon-selected-colour: #f44336;
+    --breakpoint-icon-colour: #9e9e9e;
+    --breakpoint-icon-selected-colour: #f44336;
+
+
+    /* Buttons */
+    --btn-default-font-colour: var(--base00);
+    --btn-default-bg-colour: var(--base2);
+    --btn-default-border-colour: var(--base1);
+
+    --btn-default-hover-font-colour: var(--base01);
+    --btn-default-hover-bg-colour: var(--base1);
+    --btn-default-hover-border-colour: var(--base0);
+
+    --btn-success-font-colour: var(--base00);
+    --btn-success-bg-colour: var(--base3);
+    --btn-success-border-colour: var(--base0);
+
+    --btn-success-hover-font-colour: var(--base01);
+    --btn-success-hover-bg-colour: var(--base1);
+    --btn-success-hover-border-colour: var(--base0);
+
+
+    /* Highlighter colours */
+    --hl1: var(--base1);
+    --hl2: var(--sol-blue);
+    --hl3: var(--sol-green);
+    --hl4: var(--sol-yellow);
+    --hl5: var(--sol-magenta);
+
+
+    /* Scrollbar */
+    --scrollbar-track: var(--base3);
+    --scrollbar-thumb: var(--base1);
+    --scrollbar-hover: var(--base0);
+
+
+    /* Misc. */
+    --drop-file-border-colour: var(--base1);
+    --table-border-colour: var(--base1);
+    --popover-background: var(--base2);
+    --popover-border-colour: var(--base1);
+    --code-background: var(--base3);
+    --code-font-colour: var(--base01);
+    --input-highlight-colour: var(--base01);
+    --input-border-colour: var(--base00);
+}
+
 /* Utilities */
 
 /**
@@ -14401,6 +14895,10 @@ body {
     line-height: 0;
 }
 
+.hidden {
+    display: none;
+}
+
 .blur {
     color: transparent !important;
     text-shadow: rgba(0, 0, 0, 0.95) 0 0 10px !important;
@@ -14700,6 +15198,16 @@ span.btn img {
     border: none;
 }
 
+.op-count {
+    float: right;
+    color: #999;
+    color: var(--subtext-font-colour);
+    font-weight: normal;
+    font-size: xx-small;
+    opacity: 0.5;
+    padding-left: .5em;
+}
+
 /**
  * Operation styles
  *
@@ -14778,6 +15286,10 @@ select.arg {
     min-width: 100px;
 }
 
+select.arg.form-control:not([size]):not([multiple]), select.custom-file-control:not([size]):not([multiple]) {
+    height: 100% !important;
+}
+
 textarea.arg {
     min-height: 74px;
     resize: vertical;
@@ -14789,7 +15301,7 @@ div.toggle-string {
 
 input.toggle-string {
     border-top-right-radius: 0 !important;
-    height: 42px !important;
+    height: 100%;
 }
 
 .operation [class^='bmd-label'],
@@ -16319,6 +16831,11 @@ input.toggle-string {
     color: var(--input-highlight-colour);
 }
 
+.bmd-form-group.is-filled:focus-within .checkbox.option-item label {
+    color: #1976d2;
+    color: var(--input-highlight-colour);
+}
+
 .bmd-form-group.option-item label+.form-control{
     background-image:
         linear-gradient(to top, #1976d2 2px, rgba(0, 0, 0, 0) 2px),
@@ -16483,6 +17000,17 @@ div#output {
 
 /* Operations */
 
+del {
+    background-color: #ffb6b6aa;
+    background-color: var(--hl3);
+}
+
+ins {
+    text-decoration: underline; /* shouldn't be needed, but Chromium doesn't copy to clipboard without it */
+    background-color: #8de768aa;
+    background-color: var(--hl5);
+}
+
 /**
  * JSON styles
  *
@@ -16537,7 +17065,8 @@ ul.json-dict, ol.json-array {
 }
 
 .json-summary {
-    display: contents;
+    display: inline;
+    list-style: none;
 }
 
 /* Display object and array brackets when closed */
